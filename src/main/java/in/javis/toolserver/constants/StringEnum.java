@@ -1,5 +1,8 @@
 package in.javis.toolserver.constants;
 
+/**
+ * Enumeration for various string constants used in the application.
+ */
 public enum StringEnum {
     PYTHON("python"),
     LIST_PYTHON_ARGS_SCRIPT("list(inspect.signature(%s).parameters.keys())"),

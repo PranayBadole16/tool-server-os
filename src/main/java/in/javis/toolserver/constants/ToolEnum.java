@@ -2,6 +2,13 @@ package in.javis.toolserver.constants;
 
 import lombok.Getter;
 
+/**
+ * Enum representing different tools with associated properties.
+ * <p>
+ * This enum defines a set of tool types, each with a name and a flag isScriptTool indicating whether it is embedded from a Python script.
+ * It provides methods to access these properties.
+ * </p>
+ */
 public enum ToolEnum {
 
     ADD("ADD", false),

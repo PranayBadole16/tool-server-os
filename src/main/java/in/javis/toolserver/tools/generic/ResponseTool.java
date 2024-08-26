@@ -9,7 +9,7 @@ import static in.javis.toolserver.helpers.PolyglotObjectMapper.convertPolyglotVa
 public class ResponseTool extends AbstractTool {
 
     public ResponseTool() {
-        this.argumentNames = RESPONSE_TOOL_ARGS;
+        this.argumentNames = RESPONSE_TOOL_ARGS.getArgs();
     }
 
     @Override

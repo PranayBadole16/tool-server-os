@@ -8,6 +8,13 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+/**
+ * Security configuration class for the application.
+ * <p>
+ * This configuration sets up security for the web application, including HTTP request authorization,
+ * CSRF protection settings, and the addition of custom filters.
+ * </p>
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -18,7 +25,8 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((requests) -> requests
 
-// by passing all requests without authentication
+// Allow all requests without authentication (customize as needed)
+
 //                        .requestMatchers("/error").permitAll()
 //                        .requestMatchers("/health").permitAll()
 //                        .anyRequest().authenticated()

@@ -7,6 +7,14 @@ import lombok.NoArgsConstructor;
 
 import java.util.Map;
 
+/**
+ * Represents a request to the tool server.
+ * <p>
+ * This class encapsulates all the necessary information required to execute a tool request on the server.
+ * It includes details such as the tool name, parameters, language, script, token, and
+ * context (The context or additional information needed at runtime by the tool's script.).
+ * </p>
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

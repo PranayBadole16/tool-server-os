@@ -4,7 +4,6 @@ import com.javis.universaltoolbridge.tools.AbstractTool;
 import org.graalvm.polyglot.Value;
 
 import static in.javis.toolserver.constants.ToolArgumentsConstants.ADD_TOOL_ARGS;
-import static in.javis.toolserver.constants.ToolArgumentsConstants.RESPONSE_TOOL_ARGS;
 
 /**
  * Example tool implementation that adds two integers.
@@ -17,7 +16,7 @@ public class AddTool extends AbstractTool {
      * Adds "a" and "b" as expected argument names.
      */
     public AddTool() {
-        this.argumentNames = ADD_TOOL_ARGS;
+        this.argumentNames = ADD_TOOL_ARGS.getArgs();
     }
 
     /**
